@@ -1,0 +1,26 @@
+{
+  "name": "vis-test",
+  "version": "1.0.0",
+  "description": "Example of creating connection to datastore, pulling down hue lightstrip data and plotting it in d3.",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kael Greco",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "gcloud": "^0.31.0",
+    "http": "0.0.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0",
+    "nconf": "^0.8.4",
+    "path": "^0.12.7",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5"
+  }
+}
