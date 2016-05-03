@@ -8,9 +8,9 @@ Simple plot of HUE lightstrip over time. Functionality to poll google datastore 
 * Download the Google Cloud SDK.
 * Make sure you're authenticated with the gcloud sdk.
 
-npm install
+* npm install
 
-browserify javascripts/chart.js >bundle.js
-node server.js
+* browserify javascripts/chart.js >bundle.js
+* node server.js
 
-point your browser at: http://localhost:8080/
+* point your browser at: http://localhost:8080/
