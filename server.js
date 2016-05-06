@@ -31,21 +31,21 @@ io.on('connection', function(socket) {
 	socket.on('pollDB', function(data, callback) {
 
 		// Uncomment to query the db!
-		// getModel().list(10, function (err, entities, cursor) {
-    // 	if (err) {
-    //   	return next(err);
-    // 	}
-		// 	callback({
-		// 		entities : entities
-		// 	});
-  	// });
+		getModel().list(40, function (err, entities, cursor) {
+    	if (err) {
+      	return next(err);
+    	}
+			callback({
+				entities : entities
+			});
+  	});
 
 		// Read from a file (some fake data)
-		fs.readFile(__dirname + '/data/entities.json', 'utf8', function(err, data) {
-			callback({
-				entities : JSON.parse(data).entities
-			});
-		});
+		// fs.readFile(__dirname + '/data/entities.json', 'utf8', function(err, data) {
+		// 	callback({
+		// 		entities : JSON.parse(data).entities
+		// 	});
+		// });
 	});
 });
 app.get('/', function(req, res) {
